@@ -308,6 +308,70 @@ body {
     width: 364px;
   }
 }
+/* Common xs1, xs2 */
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .c-wrapper {
+    width: 760px;
+  }
+}
+@media all and (min-width: 768px) {
+  .section-06 .c-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 80px 70px 36px 70px;
+  }
+  .section-06 .c-wrapper .c-col-1 .c-col-1-A {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    /* or 133% */
+    /* Black */
+    color: #000000;
+  }
+  .section-06 .c-wrapper .c-col-1 .c-col-1-B {
+    width: 412px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    /* Accent */
+    color: #532c59;
+  }
+  .section-06 .c-wrapper .c-item {
+    border: 1px solid #d6bcfa;
+    border-radius: 15px;
+    padding: 24px;
+    margin-right: 32px;
+  }
+  .section-06 .c-wrapper .c-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .section-06 .c-wrapper .c-item .c-item-01 {
+    display: flex;
+  }
+  .section-06 .c-wrapper .c-item .c-item-01 .c-item-01-A {
+    margin-right: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+  }
+  .section-06 .c-wrapper .c-item .c-item-02 {
+    margin-top: 12px;
+  }
+  .section-06 .c-wrapper .c-item .c-item-02 .c-item-02-A {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #532c59;
+  }
+}
 /* Common xs1, xs2 mobil*/
 @media all and (max-width: 767px) {
   .header-01 {
