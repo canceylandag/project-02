@@ -1,23 +1,14 @@
 @import "../../Base/Global.scss";
 @import "../../Base/Colour.scss";
 
-/* Common xs1, xs2 */
-@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
-  .section-05 {
-  }
-}
-
-/* Common sm1, sm2 tablet */
-@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
-  .c-wrapper {
-    width: $c-wrapper-sm;
-  }
-}
-
 @media all and (min-width: #{$mq-sm1 + "px"}) {
   .section-05 {
     padding-top: 80px;
-    background-color: white;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
     .c-wrapper {
       .c-content-01 {
         display: flex;
@@ -35,17 +26,17 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .c-item-01 {
-          &:not(:nth-child(3n)){
+          &:not(:nth-child(3n)) {
             margin-right: 16px;
-        }
-        margin-bottom: 16px;
+          }
+          margin-bottom: 16px;
           padding: 24px;
           border: 1px solid #d6bcfa;
           border-radius: 10px;
           width: 400px;
           .c-item-01-A {
             display: flex;
-           
+
             align-items: center;
             .c-item-01-A-01 {
               margin-right: 5px;
@@ -57,5 +48,39 @@
         }
       }
     }
+  }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+  .section-05 {
+    .c-wrapper {
+      width: $c-wrapper-sm;
+
+      .c-content-02 {
+        flex-wrap: wrap;
+        .c-item-01 {
+          width: 25%;
+          .c-item-01-B {
+            width: 25%;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            /* or 143% */
+
+            /* Accent */
+
+            color: #532c59;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Common xs1, xs2 */
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+  .section-05 {
   }
 }

@@ -1,14 +1,7 @@
-/* Common xs1, xs2 */
-/* Common sm1, sm2 tablet */
-@media all and (min-width: 768px) and (max-width: 1319px) {
-  .c-wrapper {
-    width: 760px;
-  }
-}
 @media all and (min-width: 768px) {
   .section-05 {
     padding-top: 80px;
-    background-color: white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
   }
   .section-05 .c-wrapper .c-content-01 {
     display: flex;
@@ -46,4 +39,27 @@
   .section-05 .c-wrapper .c-content-02 .c-item-01 .c-item-01-B {
     width: 364px;
   }
-}/*# sourceMappingURL=Section05.css.map */
+}
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .section-05 .c-wrapper {
+    width: 760px;
+  }
+  .section-05 .c-wrapper .c-content-02 {
+    flex-wrap: wrap;
+  }
+  .section-05 .c-wrapper .c-content-02 .c-item-01 {
+    width: 25%;
+  }
+  .section-05 .c-wrapper .c-content-02 .c-item-01 .c-item-01-B {
+    width: 25%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    /* Accent */
+    color: #532c59;
+  }
+}
+/* Common xs1, xs2 *//*# sourceMappingURL=Section05.css.map */

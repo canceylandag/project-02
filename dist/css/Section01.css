@@ -1,7 +1,7 @@
 /* Common xs1, xs2 */
 /* Common sm1, sm2 tablet */
 @media all and (min-width: 768px) and (max-width: 1319px) {
-  .c-wrapper {
+  .section-01 .c-wrapper {
     width: 760px;
   }
 }

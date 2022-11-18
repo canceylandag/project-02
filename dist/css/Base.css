@@ -84,7 +84,7 @@ body {
 /* Common xs1, xs2 */
 /* Common sm1, sm2 tablet */
 @media all and (min-width: 768px) and (max-width: 1319px) {
-  .c-wrapper {
+  .section-01 .c-wrapper {
     width: 760px;
   }
 }
@@ -145,13 +145,31 @@ body {
     filter: blur(116px);
   }
 }
-/* Common xs1, xs2 */
-/* Common sm1, sm2 tablet */
-@media all and (min-width: 768px) and (max-width: 1319px) {
-  .c-wrapper {
-    width: 760px;
+@media all and (min-width: 768px) {
+  .section-02 {
+    background-color: white;
+    padding: 40px 0;
+  }
+  .section-02 .c-wrapper {
+    display: flex;
+    justify-content: space-around;
   }
 }
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .section-02 .c-wrapper {
+    width: 760px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .section-02 .c-wrapper img :first-child {
+    margin-left: 148px;
+  }
+  .section-02 .c-wrapper img:not(:nth-of-type(3n)) {
+    margin-right: 100px;
+  }
+}
+/* Common xs1, xs2 */
 @media all and (min-width: 768px) {
   .section-03 {
     padding-top: 80px;
@@ -178,6 +196,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 9px;
+    justify-content: space-around;
+  }
+  .section-03 .c-wrapper .c-content-02 .row {
+    display: flex;
+    justify-content: space-around;
   }
   .section-03 .c-wrapper .c-content-02 > .c-item-01 {
     display: flex;
@@ -197,13 +220,29 @@ body {
     text-align: center;
   }
 }
-/* Common xs1, xs2 */
 /* Common sm1, sm2 tablet */
 @media all and (min-width: 768px) and (max-width: 1319px) {
-  .c-wrapper {
+  .section-03 .c-wrapper {
     width: 760px;
   }
+  .section-03 .c-wrapper .c-content-01 .c-item-02 {
+    margin: 16px 0 64px;
+  }
+  .section-03 .c-wrapper .c-content-02 .row {
+    display: none;
+  }
+  .section-03 .c-wrapper .c-content-02 .c-item-01 {
+    width: 25%;
+  }
+  .section-03 .c-wrapper .c-content-02 .c-item-01 .item-01-A {
+    width: 50%;
+    height: 396px;
+  }
+  .section-03 .c-wrapper .c-content-02 .c-item-01 .item-01-C {
+    width: 45%;
+  }
 }
+/* Common xs1, xs2 */
 @media all and (min-width: 768px) {
   .section-04 {
     padding-top: 80px;
@@ -218,7 +257,7 @@ body {
     color: #000000;
   }
   .section-04 .c-wrapper .c-content-01 > .c-item-02 {
-    margin: 24px 270px 80px 270px;
+    margin: 24px 0 80px 0;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -259,17 +298,26 @@ body {
     line-height: 20px;
   }
 }
-/* Common xs1, xs2 */
 /* Common sm1, sm2 tablet */
 @media all and (min-width: 768px) and (max-width: 1319px) {
-  .c-wrapper {
+  .section-04 .c-wrapper {
     width: 760px;
   }
+  .section-04 .c-wrapper .c-content-01 > .c-item-02 {
+    margin: 24px 0 48px 0;
+  }
+  .section-04 .c-wrapper .second {
+    flex-wrap: wrap;
+  }
+  .section-04 .c-wrapper .second .c-item-01 {
+    width: 35%;
+  }
 }
+/* Common xs1, xs2 */
 @media all and (min-width: 768px) {
   .section-05 {
     padding-top: 80px;
-    background-color: white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
   }
   .section-05 .c-wrapper .c-content-01 {
     display: flex;
@@ -308,6 +356,29 @@ body {
     width: 364px;
   }
 }
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .section-05 .c-wrapper {
+    width: 760px;
+  }
+  .section-05 .c-wrapper .c-content-02 {
+    flex-wrap: wrap;
+  }
+  .section-05 .c-wrapper .c-content-02 .c-item-01 {
+    width: 25%;
+  }
+  .section-05 .c-wrapper .c-content-02 .c-item-01 .c-item-01-B {
+    width: 25%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    /* Accent */
+    color: #532c59;
+  }
+}
+/* Common xs1, xs2 */
 /* Common xs1, xs2 */
 /* Common sm1, sm2 tablet */
 @media all and (min-width: 768px) and (max-width: 1319px) {
@@ -492,6 +563,59 @@ body {
 /* Common xs1, xs2 mobil*/
 /* Common sm1, sm2 tablet */
 /* Common  md, lg, xl, xxl desktop*/
+@media all and (min-width: 1320px) {
+  .footer-01 {
+    background-color: white;
+  }
+  .footer-01 .c-wrapper {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .footer-01 .c-wrapper .c-content-01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-A {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* Black */
+    color: #000000;
+    opacity: 0.5;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-A :first-child {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* Black */
+    color: #000000;
+    opacity: 0.5;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C :first-child {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C :nth-child(2) {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper hr {
+    margin: 40px 0;
+    border: 1px solid #CCD5DF;
+  }
+  .footer-01 .c-wrapper .c-content-02 {
+    display: flex;
+    justify-content: center;
+  }
+}
 @font-face {
   font-family: "Syne";
   src: url("./Fonts/Syne-Regular.ttf");

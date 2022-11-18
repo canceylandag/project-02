@@ -1,3 +1,56 @@
 /* Common xs1, xs2 mobil*/
 /* Common sm1, sm2 tablet */
-/* Common  md, lg, xl, xxl desktop*//*# sourceMappingURL=Footer.css.map */
+/* Common  md, lg, xl, xxl desktop*/
+@media all and (min-width: 1320px) {
+  .footer-01 {
+    background-color: white;
+  }
+  .footer-01 .c-wrapper {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .footer-01 .c-wrapper .c-content-01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-A {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* Black */
+    color: #000000;
+    opacity: 0.5;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-A :first-child {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* Black */
+    color: #000000;
+    opacity: 0.5;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C :first-child {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C :nth-child(2) {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper hr {
+    margin: 40px 0;
+    border: 1px solid #CCD5DF;
+  }
+  .footer-01 .c-wrapper .c-content-02 {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=Footer.css.map */

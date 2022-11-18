@@ -4,14 +4,20 @@
 
 /* Common xs1, xs2 */
 @media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
-    .section-01 {}
+    .section-01 {
+
+
+    }
 }
 
 /* Common sm1, sm2 tablet */
 @media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .section-01{
     .c-wrapper {
         width: $c-wrapper-sm;
+        
     }
+}
 }
 
 @media all and (min-width: #{$mq-sm1 + "px"}) {
