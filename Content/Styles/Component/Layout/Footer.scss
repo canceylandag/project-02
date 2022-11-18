@@ -1,20 +1,8 @@
 @import "../../Base/Global.scss";
 @import "../../Base/Colour.scss";
 
-/* Common xs1, xs2 mobil*/
-@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
-    .footer-01 {
-        
-    }
-}
 
-/* Common sm1, sm2 tablet */
-@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
-    .footer-01 {
-         
-    }
 
-}
 
 
 /* Common  md, lg, xl, xxl desktop*/
@@ -84,5 +72,85 @@
             }
         }
          
+    }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .footer-01 {
+
+        background-color: white;
+        .c-wrapper{
+            width: $c-wrapper-sm;
+            padding-top: 80px;
+            padding-bottom: 40px;
+            .c-content-01{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .c-content-01-A{
+                    display: flex;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    /* identical to box height, or 125% */
+                    
+                    
+                    /* Black */
+                    
+                    color: #000000;
+                    
+                    opacity: 0.5;
+                    :first-child{
+                        margin-right: 24px;
+                    }
+                }
+                svg{
+
+                }
+                .c-content-01-C{
+                    display: flex;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    /* identical to box height, or 125% */
+                    
+                    
+                    /* Black */
+                    
+                    color: #000000;
+                    
+                    opacity: 0.5;
+
+                    :first-child{
+                        margin-right: 24px;
+                    }
+                    :nth-child(2){
+                        margin-right: 24px;
+                    }
+                }
+            }
+            hr{
+                margin: 40px 0;
+                border: 1px solid #CCD5DF;
+            }
+
+            .c-content-02{
+                display: flex;
+                justify-content: center;
+            }
+        }
+         
+    }
+
+}
+
+
+/* Common xs1, xs2 mobil*/
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .footer-01 {
+        
     }
 }

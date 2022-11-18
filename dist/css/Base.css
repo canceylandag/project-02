@@ -81,13 +81,6 @@ body {
     width: 1300px;
   }
 }
-/* Common xs1, xs2 */
-/* Common sm1, sm2 tablet */
-@media all and (min-width: 768px) and (max-width: 1319px) {
-  .section-01 .c-wrapper {
-    width: 760px;
-  }
-}
 @media all and (min-width: 768px) {
   .section-01 {
     background-color: white;
@@ -143,6 +136,18 @@ body {
     background: radial-gradient(50% 50% at 50% 50%, #E36CE6 0%, rgba(255, 255, 255, 0) 100%);
     opacity: 0.4;
     filter: blur(116px);
+  }
+}
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .section-01 .c-wrapper {
+    width: 760px;
+  }
+}
+/* Common xs1, xs2 */
+@media all and (max-width: 767px) {
+  .section-01 .c-wrapper {
+    width: calc(100% - 32px);
   }
 }
 @media all and (min-width: 768px) {
@@ -560,8 +565,6 @@ body {
     display: none;
   }
 }
-/* Common xs1, xs2 mobil*/
-/* Common sm1, sm2 tablet */
 /* Common  md, lg, xl, xxl desktop*/
 @media all and (min-width: 1320px) {
   .footer-01 {
@@ -616,6 +619,62 @@ body {
     justify-content: center;
   }
 }
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .footer-01 {
+    background-color: white;
+  }
+  .footer-01 .c-wrapper {
+    width: 760px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .footer-01 .c-wrapper .c-content-01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-A {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* Black */
+    color: #000000;
+    opacity: 0.5;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-A :first-child {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    /* Black */
+    color: #000000;
+    opacity: 0.5;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C :first-child {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper .c-content-01 .c-content-01-C :nth-child(2) {
+    margin-right: 24px;
+  }
+  .footer-01 .c-wrapper hr {
+    margin: 40px 0;
+    border: 1px solid #CCD5DF;
+  }
+  .footer-01 .c-wrapper .c-content-02 {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Common xs1, xs2 mobil*/
 @font-face {
   font-family: "Syne";
   src: url("./Fonts/Syne-Regular.ttf");

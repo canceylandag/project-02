@@ -2,23 +2,8 @@
 @import "../../Base/Colour.scss";
 
 
-/* Common xs1, xs2 */
-@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
-    .section-01 {
 
 
-    }
-}
-
-/* Common sm1, sm2 tablet */
-@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
-    .section-01{
-    .c-wrapper {
-        width: $c-wrapper-sm;
-        
-    }
-}
-}
 
 @media all and (min-width: #{$mq-sm1 + "px"}) {
     .section-01 {
@@ -79,6 +64,27 @@
             background: radial-gradient(50% 50% at 50% 50%, #E36CE6 0%, rgba(255, 255, 255, 0) 100%);
             opacity: 0.4;
             filter: blur(116px);
+        }
+    }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+    .section-01{
+    .c-wrapper {
+        width: $c-wrapper-sm;
+        
+    }
+}
+}
+
+/* Common xs1, xs2 */
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+    .section-01 {
+
+        .c-wrapper{
+
+           width: $c-wrapper-xs;
         }
     }
 }
