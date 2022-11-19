@@ -1,0 +1,85 @@
+@media all and (min-width: 768px) {
+  .section-03 {
+    padding-top: 80px;
+    background-color: white;
+  }
+  .section-03 .c-wrapper .c-content-01 > .c-item-01 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #000000;
+  }
+  .section-03 .c-wrapper .c-content-01 > .c-item-02 {
+    margin: 16px 240px 64px 240px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #532c59;
+  }
+  .section-03 .c-wrapper .c-content-02 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 9px;
+    justify-content: space-around;
+  }
+  .section-03 .c-wrapper .c-content-02 .row-2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .section-03 .c-wrapper .c-content-02 .row-3 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .section-03 .c-wrapper .c-content-02 > .c-item-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  .section-03 .c-wrapper .c-content-02 > .c-item-01:not(:nth-child(3n)) {
+    margin-right: 16px;
+  }
+  .section-03 .c-wrapper .c-content-02 > .c-item-01 .item-01-B {
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+  .section-03 .c-wrapper .c-content-02 > .c-item-01 .item-01-C {
+    width: 412px;
+    text-align: center;
+  }
+}
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .section-03 .c-wrapper {
+    width: 760px;
+  }
+  .section-03 .c-wrapper .c-content-01 .c-item-02 {
+    margin: 16px 0 64px;
+  }
+  .section-03 .c-wrapper .c-content-02 .row-3 {
+    display: none;
+  }
+  .section-03 .c-wrapper .c-content-02 .c-item-01 {
+    width: 25%;
+  }
+  .section-03 .c-wrapper .c-content-02 .c-item-01 .item-01-A {
+    width: 50%;
+    height: 396px;
+  }
+  .section-03 .c-wrapper .c-content-02 .c-item-01 .item-01-C {
+    width: 45%;
+  }
+}
+/* Common xs1, xs2 */
+@media all and (max-width: 767px) {
+  .section-03 .c-wrapper .c-content-02 .c-item-01 {
+    width: 100%;
+  }
+  .section-03 .c-wrapper .row-2, .section-03 .c-wrapper .row-3 {
+    display: none;
+  }
+}/*# sourceMappingURL=Section03.css.map */

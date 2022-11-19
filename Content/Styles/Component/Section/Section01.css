@@ -1,12 +1,6 @@
-/* Common xs1, xs2 */
-/* Common sm1, sm2 tablet */
-@media all and (min-width: 768px) and (max-width: 1319px) {
-  .c-wrapper {
-    width: 760px;
-  }
-}
 @media all and (min-width: 768px) {
   .section-01 {
+    background-color: white;
     height: 574px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -59,5 +53,28 @@
     background: radial-gradient(50% 50% at 50% 50%, #E36CE6 0%, rgba(255, 255, 255, 0) 100%);
     opacity: 0.4;
     filter: blur(116px);
+  }
+}
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .section-01 .c-wrapper {
+    width: 760px;
+  }
+}
+/* Common xs1, xs2 */
+@media all and (max-width: 767px) {
+  .section-01 {
+    background-size: 100%;
+  }
+  .section-01 .c-wrapper {
+    width: calc(100% - 32px);
+    padding: 48px 16px;
+    margin: 0 auto;
+  }
+  .section-01 .c-wrapper .c-item-01 {
+    width: 288px;
+  }
+  .section-01 .c-wrapper .c-item-02 {
+    width: 288px;
   }
 }/*# sourceMappingURL=Section01.css.map */

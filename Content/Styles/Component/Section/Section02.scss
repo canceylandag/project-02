@@ -38,5 +38,16 @@
 
 /* Common xs1, xs2 */
 @media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
-    .section-02 {}
+    .section-02 {
+       
+        .c-wrapper{
+            margin: 0 auto;
+            img{
+                display: unset;
+                margin-right: 25px;
+            }
+           width: $c-wrapper-xs;
+          
+        }
+    }
 }

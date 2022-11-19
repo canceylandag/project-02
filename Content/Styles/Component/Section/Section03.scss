@@ -34,7 +34,11 @@
         flex-wrap: wrap;
         padding-bottom: calc(73px - 64px);
         justify-content: space-around;
-        .row{
+        .row-2{
+          display: flex;
+          justify-content: space-around;
+        }
+        .row-3{
           display: flex;
           justify-content: space-around;
         }
@@ -73,7 +77,7 @@
         }
       }
       .c-content-02{
-        .row{
+        .row-3{
           display: none;
         }
         .c-item-01{
@@ -94,5 +98,16 @@
 /* Common xs1, xs2 */
 @media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
   .section-03 {
+    .c-wrapper{
+      .c-content-02{
+      .c-item-01{
+        width: 100%;
+      }}
+      .row-2,.row-3{
+        display: none;
+      }
+    }
+
+    
   }
 }

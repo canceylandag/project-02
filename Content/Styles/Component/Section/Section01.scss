@@ -81,10 +81,20 @@
 /* Common xs1, xs2 */
 @media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
     .section-01 {
-
+        background-size: 100%;
         .c-wrapper{
 
            width: $c-wrapper-xs;
+           padding: 48px 16px;
+
+           margin: 0 auto;
+           .c-item-01{
+
+            width: 288px;
+           }
+           .c-item-02{
+            width: 288px;
+           }
         }
     }
 }
